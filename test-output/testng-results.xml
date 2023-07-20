@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="13" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-18T21:04:19 BDT" name="BGB Suite" finished-at="2023-07-18T21:06:00 BDT" duration-ms="101459">
+    <groups>
+    </groups>
+    <test started-at="2023-07-18T21:04:19 BDT" name="BGB Regression Test" finished-at="2023-07-18T21:06:00 BDT" duration-ms="101459">
+      <class name="tests.homeTest">
+        <test-method is-config="true" signature="browser()[pri:0, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:04:19 BDT" name="browser" finished-at="2023-07-18T21:04:47 BDT" duration-ms="28308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="openDetails()[pri:1, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:04:47 BDT" name="openDetails" finished-at="2023-07-18T21:04:58 BDT" duration-ms="11086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openDetails -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:06:00 BDT" name="browserClose" finished-at="2023-07-18T21:06:00 BDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- tests.homeTest -->
+      <class name="tests.successfullyForApplyTest">
+        <test-method signature="continueApplyTest()[pri:7, instance:tests.successfullyForApplyTest@4802796d]" started-at="2023-07-18T21:05:50 BDT" name="continueApplyTest" finished-at="2023-07-18T21:06:00 BDT" duration-ms="10278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- continueApplyTest -->
+      </class> <!-- tests.successfullyForApplyTest -->
+      <class name="tests.circularApplyTest">
+        <test-method signature="goAheadTest()[pri:3, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:08 BDT" name="goAheadTest" finished-at="2023-07-18T21:05:18 BDT" duration-ms="10078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goAheadTest -->
+        <test-method signature="enterSSCPassInfoTest()[pri:4, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:18 BDT" name="enterSSCPassInfoTest" finished-at="2023-07-18T21:05:29 BDT" duration-ms="10579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterSSCPassInfoTest -->
+        <test-method signature="enterHSCPassInfoTest()[pri:5, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:29 BDT" name="enterHSCPassInfoTest" finished-at="2023-07-18T21:05:39 BDT" duration-ms="10418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterHSCPassInfoTest -->
+        <test-method signature="selectOtherAndSubmitFirstForm()[pri:6, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:39 BDT" name="selectOtherAndSubmitFirstForm" finished-at="2023-07-18T21:05:50 BDT" duration-ms="10251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOtherAndSubmitFirstForm -->
+      </class> <!-- tests.circularApplyTest -->
+      <class name="tests.circularDetailsTest">
+        <test-method signature="opencircularTest()[pri:2, instance:tests.circularDetailsTest@71d44a3]" started-at="2023-07-18T21:04:58 BDT" name="opencircularTest" finished-at="2023-07-18T21:05:08 BDT" duration-ms="10147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opencircularTest -->
+      </class> <!-- tests.circularDetailsTest -->
+    </test> <!-- BGB Regression Test -->
+  </suite> <!-- BGB Suite -->
+</testng-results>
