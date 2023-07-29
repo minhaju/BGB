@@ -3,13 +3,13 @@
 <suite name="Failed suite [BGB Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="BGB Regression Test(failed)">
     <classes>
-      <class name="tests.circularDetailsTest">
+      <class name="tests.applyProcedureTest">
         <methods>
           <include name="browser"/>
-          <include name="opencircularTest"/>
           <include name="browserClose"/>
+          <include name="applyPaymentTest"/>
         </methods>
-      </class> <!-- tests.circularDetailsTest -->
+      </class> <!-- tests.applyProcedureTest -->
     </classes>
   </test> <!-- BGB Regression Test(failed) -->
 </suite> <!-- Failed suite [BGB Suite] -->

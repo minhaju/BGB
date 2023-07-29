@@ -1,55 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="13" passed="7" failed="0" skipped="0">
+<testng-results ignored="14" total="26" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-18T21:04:19 BDT" name="BGB Suite" finished-at="2023-07-18T21:06:00 BDT" duration-ms="101459">
+  <suite started-at="2023-07-29T13:12:33 BDT" name="BGB Suite" finished-at="2023-07-29T13:14:39 BDT" duration-ms="126565">
     <groups>
     </groups>
-    <test started-at="2023-07-18T21:04:19 BDT" name="BGB Regression Test" finished-at="2023-07-18T21:06:00 BDT" duration-ms="101459">
+    <test started-at="2023-07-29T13:12:33 BDT" name="BGB Regression Test" finished-at="2023-07-29T13:14:39 BDT" duration-ms="126565">
       <class name="tests.homeTest">
-        <test-method is-config="true" signature="browser()[pri:0, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:04:19 BDT" name="browser" finished-at="2023-07-18T21:04:47 BDT" duration-ms="28308" status="PASS">
+        <test-method is-config="true" signature="browser()[pri:0, instance:tests.homeTest@71d44a3]" started-at="2023-07-29T13:12:33 BDT" name="browser" finished-at="2023-07-29T13:12:40 BDT" duration-ms="7008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="openDetails()[pri:1, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:04:47 BDT" name="openDetails" finished-at="2023-07-18T21:04:58 BDT" duration-ms="11086" status="PASS">
+        <test-method signature="openDetails()[pri:1, instance:tests.homeTest@71d44a3]" started-at="2023-07-29T13:12:40 BDT" name="openDetails" finished-at="2023-07-29T13:12:51 BDT" duration-ms="11466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openDetails -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:tests.homeTest@55182842]" started-at="2023-07-18T21:06:00 BDT" name="browserClose" finished-at="2023-07-18T21:06:00 BDT" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:tests.homeTest@71d44a3]" started-at="2023-07-29T13:14:39 BDT" name="browserClose" finished-at="2023-07-29T13:14:39 BDT" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
       </class> <!-- tests.homeTest -->
+      <class name="tests.accountVerifyTest">
+        <test-method signature="clickVerifyButtonTest()[pri:0, instance:tests.accountVerifyTest@33d512c1]" started-at="2023-07-29T13:13:53 BDT" name="clickVerifyButtonTest" finished-at="2023-07-29T13:14:04 BDT" duration-ms="10125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickVerifyButtonTest -->
+        <test-method signature="enterVerifyCodeTest()[pri:0, instance:tests.accountVerifyTest@33d512c1]" started-at="2023-07-29T13:14:04 BDT" name="enterVerifyCodeTest" finished-at="2023-07-29T13:14:14 BDT" duration-ms="10091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterVerifyCodeTest -->
+      </class> <!-- tests.accountVerifyTest -->
       <class name="tests.successfullyForApplyTest">
-        <test-method signature="continueApplyTest()[pri:7, instance:tests.successfullyForApplyTest@4802796d]" started-at="2023-07-18T21:05:50 BDT" name="continueApplyTest" finished-at="2023-07-18T21:06:00 BDT" duration-ms="10278" status="PASS">
+        <test-method signature="continueApplyTest()[pri:7, instance:tests.successfullyForApplyTest@397fbdb]" started-at="2023-07-29T13:13:43 BDT" name="continueApplyTest" finished-at="2023-07-29T13:13:53 BDT" duration-ms="10293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- continueApplyTest -->
       </class> <!-- tests.successfullyForApplyTest -->
       <class name="tests.circularApplyTest">
-        <test-method signature="goAheadTest()[pri:3, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:08 BDT" name="goAheadTest" finished-at="2023-07-18T21:05:18 BDT" duration-ms="10078" status="PASS">
+        <test-method signature="goAheadTest()[pri:3, instance:tests.circularApplyTest@3590fc5b]" started-at="2023-07-29T13:13:01 BDT" name="goAheadTest" finished-at="2023-07-29T13:13:12 BDT" duration-ms="10105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goAheadTest -->
-        <test-method signature="enterSSCPassInfoTest()[pri:4, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:18 BDT" name="enterSSCPassInfoTest" finished-at="2023-07-18T21:05:29 BDT" duration-ms="10579" status="PASS">
+        <test-method signature="enterSSCPassInfoTest()[pri:4, instance:tests.circularApplyTest@3590fc5b]" started-at="2023-07-29T13:13:12 BDT" name="enterSSCPassInfoTest" finished-at="2023-07-29T13:13:22 BDT" duration-ms="10689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSSCPassInfoTest -->
-        <test-method signature="enterHSCPassInfoTest()[pri:5, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:29 BDT" name="enterHSCPassInfoTest" finished-at="2023-07-18T21:05:39 BDT" duration-ms="10418" status="PASS">
+        <test-method signature="enterHSCPassInfoTest()[pri:5, instance:tests.circularApplyTest@3590fc5b]" started-at="2023-07-29T13:13:22 BDT" name="enterHSCPassInfoTest" finished-at="2023-07-29T13:13:33 BDT" duration-ms="10584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterHSCPassInfoTest -->
-        <test-method signature="selectOtherAndSubmitFirstForm()[pri:6, instance:tests.circularApplyTest@7b98f307]" started-at="2023-07-18T21:05:39 BDT" name="selectOtherAndSubmitFirstForm" finished-at="2023-07-18T21:05:50 BDT" duration-ms="10251" status="PASS">
+        <test-method signature="selectOtherAndSubmitFirstForm()[pri:6, instance:tests.circularApplyTest@3590fc5b]" started-at="2023-07-29T13:13:33 BDT" name="selectOtherAndSubmitFirstForm" finished-at="2023-07-29T13:13:43 BDT" duration-ms="10309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectOtherAndSubmitFirstForm -->
       </class> <!-- tests.circularApplyTest -->
+      <class name="tests.loginTest">
+        <test-method signature="loginInTest()[pri:0, instance:tests.loginTest@639c2c1d]" started-at="2023-07-29T13:14:19 BDT" name="loginInTest" finished-at="2023-07-29T13:14:34 BDT" duration-ms="15304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInTest -->
+      </class> <!-- tests.loginTest -->
+      <class name="tests.applyProcedureTest">
+        <test-method signature="applyPaymentTest()[pri:0, instance:tests.applyProcedureTest@5fe94a96]" started-at="2023-07-29T13:14:34 BDT" name="applyPaymentTest" finished-at="2023-07-29T13:14:39 BDT" duration-ms="5028" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Pay Now')]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3db70f49402824cce1dd003f08c0f9fa, findElement {using=xpath, value=//button[contains(.,'Pay Now')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Windows\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:60436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60436/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3db70f49402824cce1dd003f08c0f9fa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Pay Now')]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3db70f49402824cce1dd003f08c0f9fa, findElement {using=xpath, value=//button[contains(.,'Pay Now')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Windows\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:60436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60436/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3db70f49402824cce1dd003f08c0f9fa
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at classes.applyProcedurePage.clickPayNowButton(applyProcedurePage.java:20)
+at tests.applyProcedureTest.applyPaymentTest(applyProcedureTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyPaymentTest -->
+      </class> <!-- tests.applyProcedureTest -->
       <class name="tests.circularDetailsTest">
-        <test-method signature="opencircularTest()[pri:2, instance:tests.circularDetailsTest@71d44a3]" started-at="2023-07-18T21:04:58 BDT" name="opencircularTest" finished-at="2023-07-18T21:05:08 BDT" duration-ms="10147" status="PASS">
+        <test-method signature="opencircularTest()[pri:2, instance:tests.circularDetailsTest@41d477ed]" started-at="2023-07-29T13:12:51 BDT" name="opencircularTest" finished-at="2023-07-29T13:13:01 BDT" duration-ms="10125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opencircularTest -->
       </class> <!-- tests.circularDetailsTest -->
+      <class name="tests.verifySuccessFullTest">
+        <test-method signature="loginButtonTest()[pri:0, instance:tests.verifySuccessFullTest@515c6049]" started-at="2023-07-29T13:14:14 BDT" name="loginButtonTest" finished-at="2023-07-29T13:14:19 BDT" duration-ms="5102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginButtonTest -->
+      </class> <!-- tests.verifySuccessFullTest -->
     </test> <!-- BGB Regression Test -->
   </suite> <!-- BGB Suite -->
 </testng-results>

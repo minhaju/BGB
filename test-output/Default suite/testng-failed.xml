@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.circularApplyTest">
         <methods>
-          <include name="goAheadTest"/>
+          <include name="selectOtherAndSubmitFirstForm"/>
           <include name="browser"/>
           <include name="browserClose"/>
         </methods>

@@ -2,6 +2,7 @@ package classes;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,9 +17,11 @@ public class circularDetailsPage extends openBrowser{
 	@FindBy(xpath = "(//button[contains(.,'সম্মত হন এবং আবেদন করুন')])[1]") WebElement applyButton;
 	
 	public void clickApplybutton() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, -100)");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		applyButton.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 

@@ -15,21 +15,24 @@ public class circularApplyPage extends openBrowser{
 	}
 	
 	@FindBy(xpath = "//button[contains(.,'এগিয়ে যান')]") WebElement goAhead;
-	@FindBy(xpath = "(//select[@class='p-2 border-2 rounded-md w-full border-[#969F9F]'])[1]") WebElement sscBoard;
-	@FindBy(xpath = "(//select[@class='p-2 border-2 rounded-md w-full border-[#969F9F]'])[2]") WebElement sscPassYear;
-	@FindBy(xpath = "(//input[@placeholder='রোল নাম্বার'])[1]") WebElement sscRollNo;
-	@FindBy(xpath = "(//input[contains(@placeholder,'রেজিস্ট্রেশন নম্বর')])[1]") WebElement sscRegistrationNo;
+	@FindBy(name = "sscName") WebElement sscBoard;
+	@FindBy(name = "sscYear") WebElement sscPassYear;
+	@FindBy(name = "sscRollNumber") WebElement sscRollNo;
+	@FindBy(name = "sscRegistrationNumber") WebElement sscRegistrationNo;
+	@FindBy(name = "sscResult") WebElement sscRegult;
 	
-	@FindBy(xpath = "(//select[@class='p-2 border-2 rounded-md w-full border-[#969F9F]'])[3]") WebElement hscBoard;
-	@FindBy(xpath = "(//select[@class='p-2 border-2 rounded-md w-full border-[#969F9F]'])[4]") WebElement hscPassYear;
-	@FindBy(xpath = "(//input[@placeholder='রোল নাম্বার'])[2]") WebElement hscRollNo;
-	@FindBy(xpath = "(//input[@placeholder='রেজিস্ট্রেশন নম্বর'])[2]") WebElement hscRegistrationNo;
+	@FindBy(name = "hscName") WebElement hscBoard;
+	@FindBy(name = "hscYear") WebElement hscPassYear;
+	@FindBy(name = "hscRollNumber") WebElement hscRollNo;
+	@FindBy(name = "hscRegistrationNumber") WebElement hscRegistrationNo;
+	@FindBy(name = "hscResult") WebElement hscRegult;
 	
-	@FindBy(xpath = "(//input[contains(@id,'yes-7')])[1]") WebElement swimmingYes;
-	@FindBy(xpath = "(//input[contains(@id,'no-7')])[1]") WebElement swimmingNo;
-	@FindBy(xpath = "(//input[@id='yes-7'])[2]") WebElement heightYes;
+	@FindBy(xpath = "(//input[@value='Yes'])[1]") WebElement computerExperienceYes;
+	@FindBy(xpath = "(//input[@value='Yes'])[2]") WebElement dataEntryExperienceYes;
+	@FindBy(name = "questionRadio2") WebElement dataEntryExperienceN0;
+	@FindBy(xpath = "(//input[@value='Yes'])[3]") WebElement communicationSkillsYes;
 	@FindBy(xpath = "(//input[@id='no-7'])[2]") WebElement heightNo;
-	@FindBy(xpath = "//a[contains(.,'যোগ্যতা পরীক্ষা করুন')]") WebElement qualifyExam;
+	@FindBy(xpath = "//button[text()='যোগ্যতা পরীক্ষা করুন']") WebElement qualifyExam;
 	
 	
 	
@@ -65,6 +68,12 @@ public class circularApplyPage extends openBrowser{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
+	public void enterSSCResult(String result) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		sscRegult.sendKeys(result);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	}
+	
 	public void selectHSCBoard(String board) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Select drpHSCBoard = new Select(hscBoard);
@@ -91,30 +100,31 @@ public class circularApplyPage extends openBrowser{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
-	public void selectSwimmingYes() {
+	public void enterHSCResult(String result) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		swimmingYes.click();
+		hscRegult.sendKeys(result);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	}
+
+	
+	public void selectComputerYes() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		computerExperienceYes.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
-	public void selectSwimmingNo() {
+	public void selectDataEntryYes() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		swimmingNo.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	}
-	
-	public void selectHeightYes() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		heightYes.click();
+		dataEntryExperienceYes.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
-	public void selectHeightNo() {
+	public void selectCommunicationYes() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		heightNo.click();
+		communicationSkillsYes.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
-	
+		
 	public void clickqualityExam() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		qualifyExam.click();

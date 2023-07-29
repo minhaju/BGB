@@ -8,17 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.openBrowser;
 
-public class homePage extends openBrowser{
-	public homePage() {
+public class applyProcedurePage extends openBrowser{
+	public applyProcedurePage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[@href='/job-circular-details/Office-Assistant']") WebElement detailsButton;
+	@FindBy(xpath ="//button[contains(.,'Pay Now')]") WebElement payNow;
 	
-	public void clickDetails() {
+	public void clickPayNowButton() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		detailsButton.click();
+		payNow.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 	}
 
 }

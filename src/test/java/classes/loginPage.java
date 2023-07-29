@@ -8,31 +8,30 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.openBrowser;
 
-public class successfullForApplyPage extends openBrowser{
-	
-	public successfullForApplyPage() {
+public class loginPage extends openBrowser{
+	public loginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath ="//input[@placeholder='ইমেল ঠিকানা']") WebElement emailAddress;
-	@FindBy(xpath ="//input[@placeholder='ফোন নম্বর']") WebElement phoneNumber;
-	@FindBy(xpath ="//button[@type='submit']") WebElement continueApplyButton;
+	@FindBy(xpath = "//input[@placeholder='ইউজার আইডি']") WebElement emailAddress;
+	@FindBy(xpath = "//input[@placeholder='পাসওয়ার্ড']") WebElement password;
+	@FindBy(xpath = "//button[contains(.,'Login')]") WebElement loginButton;	
 	
 	public void enterEmail(String email) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		emailAddress.sendKeys(email);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
-	public void enterPhone(String phone) {
+	public void enterPassword(String pass) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		phoneNumber.sendKeys(phone);
+		password.sendKeys(pass);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
-	
-	public void clickContinueApply() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		continueApplyButton.click();
+	public void clickLogin() {
+		loginButton.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 }
+
+

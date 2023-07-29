@@ -20,6 +20,7 @@ public class circularApplyTest extends openBrowser{
 		circularApply.selectSSCPassYear("২০০৪");
 		circularApply.enterSSCRollNo("34567987");
 		circularApply.enterSSCRegistrationNo("3459876");
+		circularApply.enterSSCResult("4.50");
 		Thread.sleep(10000);
 	}
 	
@@ -30,14 +31,16 @@ public class circularApplyTest extends openBrowser{
 		circularApply.selectHSCPassYear("২০০৬");
 		circularApply.enterHSCRollNo("34567980");
 		circularApply.enterHSCRegistrationNo("3459879");
+		circularApply.enterHSCResult("4.20");
 		Thread.sleep(10000);
 	}
 	
 	@Test(priority = 6)
 	public void selectOtherAndSubmitFirstForm() throws InterruptedException {
 		circularApplyPage circularApply = new circularApplyPage();
-		circularApply.selectSwimmingYes();
-		circularApply.selectHeightYes();
+		circularApply.selectComputerYes();
+		circularApply.selectDataEntryYes();
+		circularApply.selectCommunicationYes();
 		circularApply.clickqualityExam();
 		Thread.sleep(10000);
 	}

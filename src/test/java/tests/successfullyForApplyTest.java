@@ -9,8 +9,8 @@ public class successfullyForApplyTest extends openBrowser{
 	@Test(priority = 7)
 	public void continueApplyTest() throws InterruptedException {
 		successfullForApplyPage apply = new successfullForApplyPage();
+		apply.enterPhone("01723568418");
 		apply.enterEmail("test@gmail.com");
-		apply.enterPhone("12345672");
 		apply.clickContinueApply();
 		Thread.sleep(10000);
 	}

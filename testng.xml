@@ -26,6 +26,27 @@
 				  <include name="continueApplyTest"></include>
 			  </methods>
 		  </class>
+		  <class name="tests.accountVerifyTest">
+			  <methods>
+				  <include name="enterVerifyCodeTest"></include>
+				  <include name="clickVerifyButtonTest"></include>
+			  </methods>
+		  </class>
+		  <class name="tests.verifySuccessFullTest">
+			  <methods>
+				  <include name="loginButtonTest"></include>				 
+			  </methods>
+		  </class>
+		  <class name="tests.loginTest">
+			  <methods>
+				  <include name="loginInTest"></include>				 
+			  </methods>
+		  </class>
+		  <class name="tests.applyProcedureTest">
+			  <methods>
+				  <include name="applyPaymentTest"></include>				 
+			  </methods>
+		  </class>
 	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -16,9 +16,9 @@ public class openBrowser {
 	public void browser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://joinborderguard.technometrics.net/");
+		driver.get("http://bgb-rec.technometrics.net/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 	
 	@AfterTest

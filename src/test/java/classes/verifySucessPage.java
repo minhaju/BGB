@@ -8,17 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.openBrowser;
 
-public class homePage extends openBrowser{
-	public homePage() {
+public class verifySucessPage extends openBrowser{
+	public verifySucessPage() {
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath ="//a[contains(.,'Go to Login')]") WebElement loginButton;
 	
-	@FindBy(xpath = "//a[@href='/job-circular-details/Office-Assistant']") WebElement detailsButton;
-	
-	public void clickDetails() {
+	public void clickLoginButton() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		detailsButton.click();
+		loginButton.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
-
 }
