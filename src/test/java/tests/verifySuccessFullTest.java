@@ -1,5 +1,7 @@
 package tests;
 
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 import classes.verifySucessPage;
@@ -10,7 +12,7 @@ public class verifySuccessFullTest extends openBrowser{
 	public void loginButtonTest() throws InterruptedException {
 		verifySucessPage success = new verifySucessPage();
 		success.clickLoginButton();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 }

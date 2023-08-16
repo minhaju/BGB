@@ -16,9 +16,10 @@
 		  <class name="tests.circularApplyTest">
 			  <methods>
 				  <include name="goAheadTest"></include>
-				  <include name="enterSSCPassInfoTest"></include>
-				  <include name="enterHSCPassInfoTest"></include>
-				  <include name="selectOtherAndSubmitFirstForm"></include>
+				  <exclude name="enterSSCPassInfoTest"></exclude>
+				  <exclude name="enterHSCPassInfoTest"></exclude>
+				  <exclude name="selectOtherAndSubmitFirstForm"></exclude>
+				  <include name="checkQualityTest"></include>
 			  </methods>
 		  </class>
 		    <class name="tests.successfullyForApplyTest">

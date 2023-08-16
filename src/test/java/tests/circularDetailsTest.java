@@ -13,8 +13,10 @@ public class circularDetailsTest extends openBrowser {
 	public void opencircularTest() throws InterruptedException {
 		circularDetailsPage  circularDetails = new circularDetailsPage();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(300);
 		circularDetails.clickApplybutton();
-		Thread.sleep(10000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(300);
 	}
 }
 	

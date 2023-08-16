@@ -17,9 +17,9 @@ public class accoutVerifyPage extends openBrowser{
 	@FindBy(xpath = "(//input[@type='text'])[2]") WebElement verfyCode2;
 	@FindBy(xpath = "(//input[contains(@type,'text')])[3]") WebElement verfyCode3;
 	@FindBy(xpath = "(//input[@type='text'])[4]") WebElement verfyCode4;
-	@FindBy(xpath = "//button[contains(.,'Verify')]") WebElement verfyButton;
+	@FindBy(xpath = "//button[contains(.,'যাচাই করুন')]") WebElement verfyButton;
 	
-	public void enterVerifyCode(String code1, String code2, String code3, String code4) {
+	public void enterVerifyCode(String code1) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		verfyCode1.sendKeys(code1);
 //		verfyCode2.sendKeys(code2);

@@ -15,7 +15,7 @@ public class loginPage extends openBrowser{
 	
 	@FindBy(xpath = "//input[@placeholder='ইউজার আইডি']") WebElement emailAddress;
 	@FindBy(xpath = "//input[@placeholder='পাসওয়ার্ড']") WebElement password;
-	@FindBy(xpath = "//button[contains(.,'Login')]") WebElement loginButton;	
+	@FindBy(xpath = "//button[contains(.,'লগইন করুন')]") WebElement loginButton;	
 	
 	public void enterEmail(String email) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

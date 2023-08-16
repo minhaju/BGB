@@ -1,5 +1,7 @@
 package tests;
 
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 import classes.successfullForApplyPage;
@@ -9,9 +11,9 @@ public class successfullyForApplyTest extends openBrowser{
 	@Test(priority = 7)
 	public void continueApplyTest() throws InterruptedException {
 		successfullForApplyPage apply = new successfullForApplyPage();
-		apply.enterPhone("01723568418");
+		apply.enterPhone("01333568418");
 		apply.enterEmail("test@gmail.com");
 		apply.clickContinueApply();
-		Thread.sleep(10000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 }

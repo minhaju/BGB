@@ -16,7 +16,7 @@ public class openBrowser {
 	public void browser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("http://bgb-rec.technometrics.net/");
+		driver.get("http://bgb-rec.technometrics.net");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}

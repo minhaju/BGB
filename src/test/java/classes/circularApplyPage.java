@@ -32,7 +32,14 @@ public class circularApplyPage extends openBrowser{
 	@FindBy(name = "questionRadio2") WebElement dataEntryExperienceN0;
 	@FindBy(xpath = "(//input[@value='Yes'])[3]") WebElement communicationSkillsYes;
 	@FindBy(xpath = "(//input[@id='no-7'])[2]") WebElement heightNo;
-	@FindBy(xpath = "//button[text()='যোগ্যতা পরীক্ষা করুন']") WebElement qualifyExam;
+	@FindBy(xpath = "//button[text()='যোগ্যতা পরীক্ষা']") WebElement qualifyExam;
+	
+	
+	@FindBy(xpath = "(//input[@value='yes'])[1]") WebElement hightYes;
+	@FindBy(xpath = "(//input[@value='yes'])[2]") WebElement ageYes;
+	@FindBy(xpath = "(//input[@value='yes'])[3]") WebElement sscYes;
+	@FindBy(xpath = "(//input[@value='yes'])[4]") WebElement hscYes;
+	@FindBy(xpath = "(//input[@value='yes'])[5]") WebElement bangladeshiYes;
 	
 	
 	
@@ -128,6 +135,20 @@ public class circularApplyPage extends openBrowser{
 	public void clickqualityExam() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		qualifyExam.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	}
+	
+	public void checkquality() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		hightYes.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		ageYes.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		sscYes.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		hscYes.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		bangladeshiYes.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	

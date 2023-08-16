@@ -1,5 +1,7 @@
 package tests;
 
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 import classes.homePage;
@@ -11,7 +13,7 @@ public class homeTest extends openBrowser{
 	public void openDetails() throws InterruptedException {
 		homePage home=new homePage();
 		home.clickDetails();
-		Thread.sleep(10000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 }

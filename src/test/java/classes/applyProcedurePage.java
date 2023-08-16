@@ -13,7 +13,7 @@ public class applyProcedurePage extends openBrowser{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath ="//button[contains(.,'Pay Now')]") WebElement payNow;
+	@FindBy(xpath ="//button[contains(.,'ফি প্রদান করুন')]") WebElement payNow;
 	
 	public void clickPayNowButton() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

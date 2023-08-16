@@ -12,7 +12,7 @@ public class verifySucessPage extends openBrowser{
 	public verifySucessPage() {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath ="//a[contains(.,'Go to Login')]") WebElement loginButton;
+	@FindBy(xpath ="//a[contains(.,'লগইন পেইজে যান')]") WebElement loginButton;
 	
 	public void clickLoginButton() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

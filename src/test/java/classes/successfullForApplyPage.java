@@ -13,9 +13,8 @@ public class successfullForApplyPage extends openBrowser{
 	public successfullForApplyPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(xpath ="//input[@placeholder='ইমেল ঠিকানা']") WebElement emailAddress;
-	@FindBy(xpath ="//input[@placeholder='ফোন নম্বর']") WebElement phoneNumber;
+	@FindBy(xpath ="(//input[@type='text'])[1]") WebElement phoneNumber;
+	@FindBy(xpath ="(//input[@type='text'])[2]") WebElement emailAddress;
 	@FindBy(xpath ="//button[@type='submit']") WebElement continueApplyButton;
 	
 	public void enterEmail(String email) {

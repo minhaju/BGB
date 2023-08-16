@@ -1,5 +1,7 @@
 package tests;
 
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 import classes.loginPage;
@@ -8,11 +10,11 @@ import utility.openBrowser;
 public class loginTest extends openBrowser{
 	@Test
 	public void loginInTest() throws InterruptedException {
-		Thread.sleep(10000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		loginPage login = new loginPage();
-		login.enterEmail("jjkBEezP");
-		login.enterPassword("6KYWfeVC");
+		login.enterEmail("E692VSHK");
+		login.enterPassword("0a11hvu0");
 		login.clickLogin();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 }

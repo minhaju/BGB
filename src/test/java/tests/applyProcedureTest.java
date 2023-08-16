@@ -1,5 +1,7 @@
 package tests;
 
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 import classes.applyProcedurePage;
@@ -11,7 +13,7 @@ public class applyProcedureTest extends openBrowser{
 	public void applyPaymentTest() throws InterruptedException {
 		applyProcedurePage procedure = new applyProcedurePage();
 		procedure.clickPayNowButton();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 
